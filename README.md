@@ -1,5 +1,5 @@
 # Cxx
-### simple crrypting library
+### simple crypting library
 
 ## installation
 ```bash
@@ -26,7 +26,7 @@ encrypted = c.encrypt(**data) # =>str
 
 
 # to decrypt
-data = cxx.Cxx.decrypt(encrypted, key="password") # => dict
+data2 = cxx.Cxx.decrypt(encrypted, key="password") # => dict
 ```
 
 `made with ❤️ by rubbie`

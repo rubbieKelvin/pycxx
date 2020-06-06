@@ -3,15 +3,16 @@ import unittest
 import cxx
 
 class EncryptionTest(unittest.TestCase):
-    def test_encryption():
-        key, data, c = "test", dict(
+    def test_encryption(self):
+        key, data = "test", dict(
             name="rubbie"
-        ), cxx.Cxx(key=key)
+        )
+        c = cxx.Cxx(key=key)
         encrypted = c.encrypt(**data)
         data2 = cxx.Cxx.decrypt(encrypted, key)
         
         print("initial data:", data)
-        print("encrypted:", encrypted)
+        print("encrypted:", encrypted[:10]+"[...]"+encrypted[10:])
         
         self.assertEqual(
             data, data2, 
