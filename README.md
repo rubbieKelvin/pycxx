@@ -29,4 +29,4 @@ encrypted = c.encrypt(**data) # =>str
 data = cxx.Cxx.decrypt(encrypted, key="password") # => dict
 ```
 
-<small>made with ❤️ by <b>rubbie</b></small>
+`made with ❤️ by rubbie`
