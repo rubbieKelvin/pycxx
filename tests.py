@@ -7,9 +7,9 @@ class EncryptionTest(unittest.TestCase):
         key, data = "test", dict(
             name="rubbie"
         )
-        c = cxx.Cxx(key=key)
+        c = pycxx.Cxx(key=key)
         encrypted = c.encrypt(**data)
-        data2 = cxx.Cxx.decrypt(encrypted, key)
+        data2 = pycxx.Cxx.decrypt(encrypted, key)
         
         print("initial data:", data)
         print("encrypted:", encrypted[:10]+"[...]"+encrypted[-5:])
