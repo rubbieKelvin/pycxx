@@ -3,7 +3,7 @@
 
 ## installation
 ```bash
-pip install cxx
+pip install pycxx
 ```
 
 ## usage
