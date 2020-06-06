@@ -12,7 +12,7 @@ class EncryptionTest(unittest.TestCase):
         data2 = cxx.Cxx.decrypt(encrypted, key)
         
         print("initial data:", data)
-        print("encrypted:", encrypted[:10]+"[...]"+encrypted[10:])
+        print("encrypted:", encrypted[:10]+"[...]"+encrypted[-5:])
         
         self.assertEqual(
             data, data2, 
