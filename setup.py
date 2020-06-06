@@ -4,7 +4,7 @@ with open("README.md") as file:
     descr = file.read()
 
 setuptools.setup(
-    name="cxx",
+    name="pycxx",
     version="0.0.1",
     author="Rubbie Kelvin Voltsman",
     author_email="rubbiekelvinvoltsman@gmail.com",

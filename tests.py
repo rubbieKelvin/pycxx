@@ -1,6 +1,6 @@
 #!usr/bin/env python
 import unittest
-import cxx
+import pycxx
 
 class EncryptionTest(unittest.TestCase):
     def test_encryption(self):

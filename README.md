@@ -8,9 +8,9 @@ pip install cxx
 
 ## usage
 ```python
-import cxx
+import pycxx
 
-c = cxx.Cxx(key="password", expires=0)
+c = pycxx.Cxx(key="password", expires=0)
 """${expires} is the Time in milliseconds for the 
 encrypted password to be destroyed
 setting ${encrypted} to 0 implies the data would
@@ -26,7 +26,7 @@ encrypted = c.encrypt(**data) # =>str
 
 
 # to decrypt
-data2 = cxx.Cxx.decrypt(encrypted, key="password") # => dict
+data2 = pycxx.Cxx.decrypt(encrypted, key="password") # => dict
 ```
 
 `made with ❤️ by rubbie`
