@@ -1,13 +1,14 @@
 import setuptools
 
-descr = ""
+with open("README.md") as file:
+    descr = file.read()
 
 setuptools.setup(
     name="cxx",
     version="0.0.1",
     author="Rubbie Kelvin Voltsman",
     author_email="rubbiekelvinvoltsman@gmail.com",
-    description="simple crypting libraries ;)",
+    description="simple crypting library ;)",
     long_description=descr,
     long_description_content_type="text/markdown",
     url="https://rubbiekelvin@bitbucket.org/rubbiekelvin/cxx",

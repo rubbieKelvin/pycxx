@@ -6,14 +6,11 @@ from datetime import datetime, timedelta
 CHARS = string.printable
 DTFORMAT = "%Y-%m-%d %H:%M:%S.%f"
 
-class IncorrectKeyError(Exception):
-    pass
-    
-class CorruptDataError(Exception):
-    pass
+class IncorrectKeyError(Exception): pass
+class CorruptDataError(Exception):  pass
 
 class Cxx(object):
-    def __init__(self, key="cxx", expires:int=86400):
+    def __init__(self, key="cxx", expires:int=0):
         super(Cxx, self).__init__()
         self.exp = expires      # seconds:int
         self.key = key          # string
