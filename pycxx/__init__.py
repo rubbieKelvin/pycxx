@@ -58,10 +58,11 @@ class Cxx(object):
             del outer[0]
             outer += [_c]
             
-        return res
+        return b85encode(res.encode()).decode()
         
     @staticmethod
     def decrypt(string, key):
+        string = b85decode(res.encode()).decode()
         inner, outer = Cxx._mkrngs(key=key)
         deckey = b32encode(bytes(key, "utf8"))
         deckey = deckey.decode("utf8")
