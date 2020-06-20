@@ -5,7 +5,7 @@ with open("README.md") as file:
 
 setuptools.setup(
     name="pycxx",
-    version="0.0.2",
+    version="0.0.4",
     author="Rubbie Kelvin Voltsman",
     author_email="rubbiekelvinvoltsman@gmail.com",
     description="simple crypting library ;)",

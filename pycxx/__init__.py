@@ -62,7 +62,7 @@ class Cxx(object):
         
     @staticmethod
     def decrypt(string, key):
-        string = b85decode(res.encode()).decode()
+        string = b85decode(string.encode()).decode()
         inner, outer = Cxx._mkrngs(key=key)
         deckey = b32encode(bytes(key, "utf8"))
         deckey = deckey.decode("utf8")
